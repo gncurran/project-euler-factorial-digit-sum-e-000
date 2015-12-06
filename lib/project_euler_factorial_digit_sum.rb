@@ -4,7 +4,8 @@ def factorial(n)
 end
 
 def sum_of_digits(n)
-  n.to_s.chars.map(&:to_i).reduce(:+)
+  split = n.to_s.chars.map(&:to_i)
+  final = split.reduce(:+)
 end
 
 def factorial_digit_sum(n)
